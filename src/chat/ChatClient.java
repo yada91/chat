@@ -57,6 +57,8 @@ public class ChatClient {
 					pw.flush();
 					thread.stop();
 					break;
+				} else if (input.equals("")) {
+					continue;
 				} else {
 					pw.print("message:" + input + "\r\n");
 					pw.flush();
